@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Portfolio Personal
 
 Este es un portfolio moderno y profesional creado con HTML, CSS y JavaScript puro.
@@ -150,3 +151,6 @@ Este proyecto es de uso libre. Siéntete libre de modificarlo y personalizarlo s
 ---
 
 ¡Buena suerte con tu portfolio! 🎉
+=======
+# jesuuscallejaas.github.io
+>>>>>>> cc43f20467993960af65414a768df7aeb22d15d5
