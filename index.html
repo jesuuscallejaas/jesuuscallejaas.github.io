@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio profesional - Desarrollador Web">
+    <title>Mi Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Partículas de balones flotantes -->
+    <div class="floating-balls">
+        <div class="floating-ball"></div>
+        <div class="floating-ball"></div>
+        <div class="floating-ball"></div>
+        <div class="floating-ball"></div>
+        <div class="floating-ball"></div>
+        <div class="floating-ball"></div>
+        <div class="floating-ball"></div>
+        <div class="floating-ball"></div>
+    </div>
+
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h2>Portfolio</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
+                <li><a href="#educacion" class="nav-link">Educación</a></li>
+                <li><a href="#proyectos-universidad" class="nav-link">Proyectos</a></li>
+                <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de Inicio -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Hola, soy <span class="nombre">Jesús Callejas Soto</span></h1>
+            <p class="hero-subtitle">⚽ Desarrollador Web Full Stack</p>
+            <p class="hero-description">Jugando con código como con un balón. Creando experiencias digitales con precisión, estrategia y creatividad</p>
+            <div class="hero-buttons">
+                <a href="#proyectos-universidad" class="btn btn-primary">Ver Proyectos</a>
+                <a href="#contacto" class="btn btn-secondary">Contáctame</a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/jesuuscallejaas" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/jesuuscallejaas_/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="soccer-container">
+                <!-- Portería con red -->
+                <div class="goal-post">
+                    <div class="goal-net"></div>
+                    <div class="post left"></div>
+                    <div class="post right"></div>
+                    <div class="crossbar"></div>
+                </div>
+                
+                <div class="soccer-field">
+                    <div class="field-line horizontal"></div>
+                    <div class="field-line vertical"></div>
+                    <div class="center-circle"></div>
+                    <!-- Luces del estadio -->
+                    <div class="stadium-light" style="top: -20px; left: 10%;"></div>
+                    <div class="stadium-light" style="top: -20px; right: 10%;"></div>
+                </div>
+                <div class="soccer-ball">
+                    <div class="ball-shadow"></div>
+                    <div class="ball">
+                        <div class="pentagon"></div>
+                        <div class="pentagon"></div>
+                        <div class="pentagon"></div>
+                        <div class="pentagon"></div>
+                        <div class="pentagon"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Sobre Mí -->
+    <section id="sobre-mi" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Mí</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="profile-photo">
+                        <img src="images/mi-foto.jpg" alt="Jesús Callejas Soto - Foto de perfil">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Desarrollador Apasionado por la Tecnología</h3>
+                    <p>
+                        Me considero una persona curiosa y perseverante. Disfruto comprendiendo cómo funcionan 
+                        las cosas por dentro y transformando ideas en soluciones tecnológicas. Me motiva aprender, 
+                        mejorar y crear proyectos que unan lógica, eficiencia y creatividad.
+                    </p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>jesuscs2004@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Almodovar Del Campo, España</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Disponible para proyectos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Educación -->
+    <section id="educacion" class="education">
+        <div class="container">
+            <h2 class="section-title">Mi Formación Educativa</h2>
+            <div class="timeline">
+                <!-- ESI - Universidad -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024 - Actualidad</div>
+                        <h3>Ingeniería Informática</h3>
+                        <h4>Escuela Superior de Informática (ESI) - UCLM</h4>
+                        <p>Cursando estudios en Ingeniería Informática en la Universidad de Castilla-La Mancha. Enfocándome en desarrollo de software, arquitectura de sistemas y tecnologías modernas.</p>
+                    </div>
+                </div>
+
+                <!-- Instituto -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2018 - 2024</div>
+                        <h3>Bachillerato y Educación Secundaria</h3>
+                        <h4>IES San Juan Bautista de la Concepción - Almodóvar del Campo</h4>
+                        <p>Completé mis estudios de secundaria y bachillerato, desarrollando mi interés por las ciencias y la tecnología. Fue aquí donde descubrí mi pasión por la programación y el desarrollo de software.</p>
+                    </div>
+                </div>
+
+                <!-- Colegio -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2010 - 2018</div>
+                        <h3>Educación Primaria</h3>
+                        <h4>CEIP Maestro San Juan de Ávila - Almodóvar del Campo</h4>
+                        <p>Formación educativa básica donde adquirí las bases fundamentales de mi aprendizaje. Un colegio que fomentó mi curiosidad y ganas de entender cómo funcionan las cosas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Experiencia y Habilidades Adicionales -->
+    <section id="experiencia" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experiencia & Habilidades Adicionales</h2>
+            <div class="experience-grid">
+                <!-- Certificación -->
+                <div class="experience-card">
+                    <div class="experience-icon language">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>Certificación B1 de Inglés</h3>
+                    <h4>Escuela Oficial de Idiomas (EOI)</h4>
+                    <p>Certificación oficial de inglés nivel B1, demostrando competencia en comunicación escrita y oral en entornos profesionales.</p>
+                </div>
+
+                <!-- Experiencia Socorrista -->
+                <div class="experience-card">
+                    <div class="experience-icon work">
+                        <i class="fas fa-life-ring"></i>
+                    </div>
+                    <h3>Socorrista</h3>
+                    <h4>Experiencia Laboral</h4>
+                    <p>Experiencia como socorrista, desarrollando habilidades de responsabilidad, trabajo bajo presión y atención al detalle en situaciones críticas.</p>
+                </div>
+
+                <!-- Experiencia Repartidor -->
+                <div class="experience-card">
+                    <div class="experience-icon work">
+                        <i class="fas fa-motorcycle"></i>
+                    </div>
+                    <h3>Repartidor</h3>
+                    <h4>Popeyes</h4>
+                    <p>Experiencia en servicio al cliente y logística de entregas, mejorando habilidades de organización, puntualidad y comunicación efectiva.</p>
+                </div>
+
+                <!-- Creatividad Visual -->
+                <div class="experience-card">
+                    <div class="experience-icon creative">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Creatividad Visual</h3>
+                    <h4>Diseño & Estética</h4>
+                    <p>Habilidad para crear diseños atractivos y funcionales, combinando estética y usabilidad en proyectos digitales.</p>
+                </div>
+
+                <!-- Inteligencia Artificial -->
+                <div class="experience-card">
+                    <div class="experience-icon ai">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Inteligencia Artificial</h3>
+                    <h4>Herramientas & Aplicaciones</h4>
+                    <p>Conocimiento y uso de herramientas de IA para optimizar procesos, automatizar tareas y mejorar la eficiencia en el desarrollo.</p>
+                </div>
+
+                <!-- Carnet de Conducir -->
+                <div class="experience-card">
+                    <div class="experience-icon work">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Carnet de Conducir</h3>
+                    <h4>Movilidad & Autonomía</h4>
+                    <p>Permiso de conducción tipo B, proporcionando movilidad completa y disponibilidad para desplazamientos laborales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Proyectos Universitarios -->
+    <section id="proyectos-universidad" class="university-projects">
+        <div class="container">
+            <h2 class="section-title">Proyectos Universitarios</h2>
+            <p class="section-subtitle">Trabajos y prácticas realizados durante mi formación en la ESI</p>
+            
+            <div class="university-projects-grid">
+                <!-- Proyecto 1: AgriTech -->
+                <div class="university-project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-semester">2º Cuatrimestre</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3>AgriTech 🌾</h3>
+                        <p class="project-subject"><i class="fas fa-book"></i> Asignatura: Integracion de Sistemas Informaticos</p>
+                        <p class="project-description">
+                            Plataforma que ayuda a agricultores y cooperativas a tomar decisiones informadas sobre siembra, 
+                            cosecha y venta. Analiza datos de condiciones climáticas y de mercado, ofreciendo recomendaciones 
+                            que maximizan la rentabilidad de los cultivos.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">HTML/CSS</span>
+                            <span class="tech-tag">API Clima</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/VictorAstray/isi-AgriTech" class="project-btn" target="_blank">
+                                <i class="fab fa-github"></i> Ver código
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2: Juego Pokémon -->
+                <div class="university-project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-semester">2º Cuatrimestre</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3>Juego Pokémon ⚡</h3>
+                        <p class="project-subject"><i class="fas fa-book"></i> Asignatura: Interacción Persona-Ordenador II</p>
+                        <p class="project-description">
+                            Juego estilo Pokémon desarrollado en XAML y C#, que integra un sistema de combate por turnos, 
+                            gestión y creación de criaturas personalizadas, y cálculo avanzado de daño y estados. El proyecto 
+                            combina diseño visual, lógica de juego y programación orientada a objetos para ofrecer una experiencia 
+                            completa de colección, evolución y enfrentamientos dinámicos.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">XAML</span>
+                            <span class="tech-tag">WPF</span>
+                            <span class="tech-tag">.NET</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/jesuuscallejaas/REPOpokemon" class="project-btn" target="_blank">
+                                <i class="fab fa-github"></i> Repositorio Juego
+                            </a>
+                            <a href="https://github.com/jesuuscallejaas/ProyectoPokemon" class="project-btn" target="_blank">
+                                <i class="fab fa-github"></i> Repositorio Pokémons
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3: Oddish -->
+                <div class="university-project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-semester">2º Cuatrimestre</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3>Oddish 🌱</h3>
+                        <p class="project-subject"><i class="fas fa-book"></i> Asignatura: Interacción Persona-Ordenador II</p>
+                        <p class="project-description">
+                            Proyecto de animación interactiva del Pokémon Oddish desarrollado en C# y XAML. Implementa movimientos, 
+                            animaciones fluidas y respuestas a interacciones del usuario, aplicando principios de diseño de interfaces 
+                            y programación orientada a eventos para crear una experiencia visual dinámica.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">XAML</span>
+                            <span class="tech-tag">WPF</span>
+                            <span class="tech-tag">Animaciones</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/jesuuscallejaas/Oddish" class="project-btn" target="_blank">
+                                <i class="fab fa-github"></i> Ver código
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 4: MetaData Management & Explorer (MDX) -->
+                <div class="university-project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-semester">2º Cuatrimestre</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3>MetaData Management & Explorer (MDX) 📊</h3>
+                        <p class="project-subject"><i class="fas fa-book"></i> Asignatura: Ingeniería del Software 2</p>
+                        <p class="project-description">
+                            Sistema de gestión de metadatos desarrollado en equipo de 6 personas. Implementa arquitectura de software 
+                            robusta con testing exhaustivo utilizando JUnit 5, siguiendo metodologías de desarrollo ágil. 
+                            El proyecto incluye gestión completa del ciclo de vida del software, desde la implementación hasta 
+                            las pruebas automatizadas. <strong>Rol: Experto en GitHub</strong> - Gestión del repositorio, control de versiones, 
+                            y coordinación de merges del equipo.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Maven</span>
+                            <span class="tech-tag">JUnit 5</span>
+                            <span class="tech-tag">Git</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/AlejandroFernandezMunoz/ISO2-LAB-C03" class="project-btn" target="_blank">
+                                <i class="fab fa-github"></i> Repositorio Proyecto
+                            </a>
+                            <a href="https://github.com/jesuuscallejaas/ISO2-2024-C03-Testing-P2" class="project-btn" target="_blank">
+                                <i class="fab fa-github"></i> Repositorio Testing
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 5: Servicio de Almacenamiento Distribuido -->
+                <div class="university-project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-semester">1º Cuatrimestre</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3>Servicio de Almacenamiento Distribuido ☁️</h3>
+                        <p class="project-subject"><i class="fas fa-book"></i> Asignatura: Sistemas Distribuidos</p>
+                        <p class="project-description">
+                            Servicio de almacenamiento distribuido para estructuras de datos (listas, conjuntos y diccionarios) 
+                            implementado con Python y ZeroC Ice. Incluye persistencia de datos en JSON, comunicación mediante 
+                            middleware RPC, gestión completa de operaciones remotas con manejo de excepciones, control de iteradores 
+                            y sincronización de estado entre cliente-servidor.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">ZeroC Ice</span>
+                            <span class="tech-tag">RPC</span>
+                            <span class="tech-tag">JSON</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/jesuuscallejaas/distribuidos-extra-24-25" class="project-btn" target="_blank">
+                                <i class="fab fa-github"></i> Ver código
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Añade más proyectos según necesites -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Habilidades -->
+    <section id="habilidades" class="skills">
+        <div class="container">
+            <h2 class="section-title">Habilidades</h2>
+            <div class="skills-grid">
+                <!-- Front-end -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-laptop-code"></i> Front-End</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>HTML5 & CSS3</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>JavaScript</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>React</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Back-end -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Back-End</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Node.js</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Python</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>SQL</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Herramientas -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Herramientas</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Git & GitHub</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>VS Code</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Figma</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contáctame</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Hablemos</h3>
+                    <p>¿Tienes un proyecto en mente? Me encantaría escucharlo. Contáctame y hagamos realidad tus ideas.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>jesuscs2004@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Teléfono</h4>
+                                <p>+34 747 49 42 32</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Ubicación</h4>
+                                <p>Almodovar Del Campo, España</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Tu Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="asunto" name="asunto" placeholder="Asunto" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Tu Mensaje" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Jesús Callejas Soto. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="https://github.com/jesuuscallejaas" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/jesuuscallejaas_/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
