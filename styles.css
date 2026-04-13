@@ -1296,7 +1296,7 @@ a, button, .btn {
     height: 10px;
     background: var(--bg-dark);
     border-radius: 10px;
-    overflow: visible;
+    overflow: hidden;
     position: relative;
 }
 
@@ -1309,15 +1309,6 @@ a, button, .btn {
 }
 
 /* Bandera fija en las barras de habilidades */
-.skill-progress::after {
-    content: '🚩';
-    position: absolute;
-    right: -12px;
-    top: -20px;
-    font-size: 18px;
-    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
-}
-
 /* Projects Section */
 .projects {
     padding: 5rem 20px;
@@ -1806,6 +1797,10 @@ a, button, .btn {
     animation: fadeInUp 0.6s ease 0.7s forwards;
 }
 
+.university-project-card:nth-child(5) {
+    animation: fadeInUp 0.6s ease 0.9s forwards;
+}
+
 .university-project-card .project-header {
     background:
         linear-gradient(120deg, rgba(39, 174, 96, 0.96), rgba(22, 101, 52, 0.96)),
@@ -1872,6 +1867,35 @@ a, button, .btn {
     color: #475569;
     line-height: 1.6;
     margin-bottom: 1.2rem;
+}
+
+.university-project-card .project-demo {
+    margin-bottom: 1.2rem;
+}
+
+.university-project-card .project-demo summary {
+    list-style: none;
+    cursor: pointer;
+    width: fit-content;
+    min-width: 120px;
+    text-align: center;
+}
+
+.university-project-card .project-demo summary::-webkit-details-marker {
+    display: none;
+}
+
+.university-project-card .project-demo[open] summary {
+    margin-bottom: 0.8rem;
+}
+
+.university-project-card .project-demo-video {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+    border: 1px solid rgba(22, 101, 52, 0.25);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+    background: #000;
 }
 
 .university-project-card .project-tech {
