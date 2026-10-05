@@ -74,6 +74,7 @@ document.querySelectorAll('.hero .social-links a').forEach((link) => {
 });
 
 const downloadLink = document.querySelector('.hero .text-link');
+document.querySelectorAll('a[download]').forEach((link) => { link.href = 'documents/CV - Jesus Callejas Soto.pdf'; });
 if (downloadLink) downloadLink.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M11 3h2v10.17l3.59-3.58L18 11l-6 6-6-6 1.41-1.41L11 13.17V3Zm-6 16h14v2H5v-2Z"/></svg> Descargar CV';
 
 const contactGrid = document.querySelector('.contact-section .contact-grid');
