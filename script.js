@@ -35,6 +35,12 @@ if (profileWindowLabel) profileWindowLabel.textContent = 'Mi foto';
 const workKicker = document.querySelector('#experiencia .section-kicker');
 if (workKicker) workKicker.textContent = '05 / Vida laboral';
 
+const englishCertificate = document.querySelector('#informacion-adicional .additional-card');
+if (englishCertificate) {
+	englishCertificate.querySelector('.additional-icon').textContent = 'B1';
+	englishCertificate.querySelector('h3').textContent = 'Certificación de Inglés';
+}
+
 const profileLines = document.querySelectorAll('.hero .profile-details p');
 if (profileLines.length && !reducedMotion) {
 	profileLines.forEach((line) => {
