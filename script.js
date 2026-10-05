@@ -12,7 +12,7 @@ const profileTerminal = document.querySelector('.hero-terminal .terminal-content
 const profileWindowTitle = document.querySelector('.hero-terminal .window-title');
 if (profileWindowTitle) profileWindowTitle.textContent = 'Perfil';
 if (profileTerminal) {
-	profileTerminal.innerHTML = `<div class="profile-details"><p><span>Nombre</span> Jesús Callejas Soto</p><p><span>Especialidad</span> Tecnologías de la Información</p><p><span>Enfoque</span> Desarrollo Web Full Stack</p><p><span>Stack</span> Angular · Spring Boot · MySQL</p><p><span>Ubicación</span> Almodóvar del Campo, España</p><p><span>Estado</span> Disponible para proyectos</p></div>`;
+	profileTerminal.innerHTML = `<p class="terminal-command">$ cat perfil.json</p><div class="profile-details"><p><span>Nombre</span> Jesús Callejas Soto</p><p><span>Especialidad</span> Tecnologías de la Información</p><p><span>Enfoque</span> Desarrollo Web Full Stack</p><p><span>Stack</span> Angular · Spring Boot · MySQL</p><p><span>Ubicación</span> Almodóvar del Campo, España</p><p><span>Estado</span> Disponible para proyectos</p></div>`;
 }
 
 const heroEyebrow = document.querySelector('.hero .eyebrow');
@@ -29,16 +29,30 @@ if (aboutCopy) {
 	aboutCopy.innerHTML = `<h3>Estudiante de Ingeniería Informática</h3><p>Soy una persona curiosa, perseverante y orientada al aprendizaje continuo. Me interesa comprender cómo funcionan las cosas y convertir ideas en soluciones digitales claras, útiles y bien estructuradas.</p><p>Disfruto trabajando en proyectos que combinan lógica, creatividad y atención al detalle. Mi objetivo es seguir creciendo en el ámbito de las Tecnologías de la Información y aportar valor en equipos de desarrollo.</p>`;
 }
 
-const profileWindowLabel = document.querySelector('#sobre-mi .profile-frame .window-title');
-if (profileWindowLabel) profileWindowLabel.textContent = 'Mi foto';
+document.querySelector('#sobre-mi .profile-frame .window-bar')?.remove();
 
 const workKicker = document.querySelector('#experiencia .section-kicker');
-if (workKicker) workKicker.textContent = '05 / Vida laboral';
+if (workKicker) workKicker.textContent = '05 / EXPERIENCIA';
 
 const englishCertificate = document.querySelector('#informacion-adicional .additional-card');
 if (englishCertificate) {
 	englishCertificate.querySelector('.additional-icon').textContent = 'B1';
 	englishCertificate.querySelector('h3').textContent = 'Certificación de Inglés';
+	englishCertificate.querySelector('h4').textContent = 'Escuela Oficial de Idiomas (EOI)';
+	englishCertificate.querySelector('p').textContent = 'Certificación oficial de inglés nivel B1, demostrando competencia en comunicación escrita y oral en entornos profesionales.';
+}
+
+const drivingCard = document.querySelector('#informacion-adicional .additional-card:nth-child(2)');
+if (drivingCard) {
+	drivingCard.querySelector('h3').textContent = 'Carnet de Conducir';
+	drivingCard.querySelector('h4').textContent = 'Tipo B · Movilidad y autonomía';
+	drivingCard.querySelector('p').textContent = 'Permiso de conducción tipo B, proporcionando movilidad completa y disponibilidad para desplazamientos laborales.';
+}
+
+const cojaliCard = document.querySelector('#experiencia .secondary-item:first-child');
+if (cojaliCard) {
+	cojaliCard.classList.add('primary-experience');
+	cojaliCard.querySelector('h3').textContent = 'Prácticas de Desarrollo Web · Cojali · 2026';
 }
 
 const profileLines = document.querySelectorAll('.hero .profile-details p');
@@ -88,8 +102,19 @@ if (contactGrid) {
 	contactGrid.innerHTML = `<div class="contact-heading reveal"><p class="section-kicker">07 / CONTACTO</p><h2 class="section-title" id="contact-title">Contáctame</h2></div><div class="contact-layout"><div class="contact-copy-full reveal"><h3>Hablemos</h3><p class="section-intro">¿Tienes un proyecto en mente? Me encantaría escucharlo. Escríbeme y hablamos.</p><div class="contact-list"><a href="mailto:jesuscs2004@gmail.com">jesuscs2004@gmail.com</a><a href="tel:+34747494232">+34 747 49 42 32</a><a href="https://www.linkedin.com/in/jesus-callejas-soto-110485331/?isSelfProfile=true" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://github.com/jesuuscallejaas" target="_blank" rel="noopener noreferrer">GitHub</a><span>Almodóvar del Campo, España</span></div><div class="contact-actions"><button class="contact-copy" type="button" id="copy-email">Copiar email</button><p class="copy-status" id="copy-status" aria-live="polite"></p><a class="text-link" href="mailto:jesuscs2004@gmail.com?subject=Contacto%20desde%20tu%20portfolio">Escribirme por email</a></div></div><form class="contact-form-card reveal" id="contact-form"><label for="contact-name">Nombre</label><input id="contact-name" name="name" type="text" placeholder="Tu nombre" required><label for="contact-email">Email</label><input id="contact-email" name="email" type="email" placeholder="Tu email" required><label for="contact-subject">Asunto</label><input id="contact-subject" name="subject" type="text" placeholder="Asunto" required><label for="contact-message">Mensaje</label><textarea id="contact-message" name="message" rows="5" placeholder="Tu mensaje" required></textarea><button class="button contact-primary" type="submit">Enviar mensaje</button><p class="form-note" aria-live="polite">Se abrirá tu cliente de correo.</p></form></div>`;
 }
 
+const contactTitle = document.querySelector('#contact-title');
+if (contactTitle) contactTitle.textContent = '~/Contacto';
+document.querySelectorAll('.contact-list a').forEach((link) => {
+	const label = link.textContent.trim();
+	const iconKey = label === 'LinkedIn' ? 'LinkedIn' : label === 'GitHub' ? 'GitHub' : '';
+	if (iconKey) link.innerHTML = `<span class="contact-social-icon">${socialIcons[iconKey]}</span><span>${label}</span>`;
+});
+
 document.querySelector('.contact-actions')?.remove();
 document.querySelector('.form-note')?.remove();
+
+const gramolaVideo = document.querySelector('.project-featured video');
+if (gramolaVideo) gramolaVideo.controls = true;
 
 const educationCertificate = [...document.querySelectorAll('#formacion .education-item')]
 	.find((item) => item.querySelector('h3')?.textContent.includes('Inglés B1'));
@@ -138,8 +163,9 @@ const sectionTitles = {
 	'#projects-title': '~/Proyectos',
 	'#skills-title': '~/Habilidades',
 	'#education-title': '~/Formación',
-	'#experience-title': '~/Experiencia personal',
-	'#contact-title': 'Contáctame'
+	'#experience-title': '~/Experiencia',
+	'#contact-title': '~/Contacto',
+	'#additional-title': '~/Información adicional'
 };
 Object.entries(sectionTitles).forEach(([selector, title]) => {
 	const element = document.querySelector(selector);
@@ -151,7 +177,7 @@ const sectionKickers = {
 	'#proyectos': '02 / PROYECTOS',
 	'#habilidades': '03 / HABILIDADES',
 	'#formacion': '04 / FORMACIÓN',
-	'#experiencia': '05 / VIDA LABORAL',
+	'#experiencia': '05 / EXPERIENCIA',
 	'#informacion-adicional': '06 / INFORMACIÓN ADICIONAL',
 	'#contacto': '07 / CONTACTO'
 };
