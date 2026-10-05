@@ -12,7 +12,7 @@ const profileTerminal = document.querySelector('.hero-terminal .terminal-content
 const profileWindowTitle = document.querySelector('.hero-terminal .window-title');
 if (profileWindowTitle) profileWindowTitle.textContent = 'Perfil';
 if (profileTerminal) {
-	profileTerminal.innerHTML = `<p class="terminal-command">$ cat perfil.json</p><div class="profile-details"><p><span>Nombre</span> Jesús Callejas Soto</p><p><span>Especialidad</span> Tecnologías de la Información</p><p><span>Enfoque</span> Desarrollo Web Full Stack</p><p><span>Stack</span> Angular · Spring Boot · MySQL</p><p><span>Ubicación</span> Almodóvar del Campo, España</p><p><span>Estado</span> Disponible para proyectos</p></div>`;
+	profileTerminal.innerHTML = `<div class="profile-details"><p><span>Nombre</span> Jesús Callejas Soto</p><p><span>Especialidad</span> Tecnologías de la Información</p><p><span>Enfoque</span> Desarrollo Web Full Stack</p><p><span>Stack</span> Angular · Spring Boot · MySQL</p><p><span>Ubicación</span> Almodóvar del Campo, España</p><p><span>Estado</span> Disponible para proyectos</p></div>`;
 }
 
 const heroEyebrow = document.querySelector('.hero .eyebrow');
