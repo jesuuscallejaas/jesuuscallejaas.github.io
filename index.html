@@ -222,6 +222,7 @@
                             <li>Angular</li><li>TypeScript</li><li>Spring Boot</li><li>MySQL</li><li>JWT</li><li>OAuth 2.0</li><li>Stripe</li><li>Spotify API</li>
                         </ul>
                         <div class="project-links">
+                            <a class="link-arrow" href="https://github.com/jesuuscallejaas/gramola-jesus" target="_blank" rel="noopener noreferrer">Código<svg class="icon"><use href="#i-arrow"/></svg></a>
                             <a class="link-arrow" href="videos/demo_gramola.mp4" target="_blank" rel="noopener noreferrer">Ver demo en vídeo<svg class="icon"><use href="#i-arrow"/></svg></a>
                         </div>
                     </div>
@@ -291,34 +292,73 @@
         <!-- HABILIDADES -->
         <section class="section" id="habilidades" aria-labelledby="skills-title">
             <div class="container">
-                <div class="section-heading reveal">
+                <div class="section-heading section-heading-center reveal">
                     <p class="eyebrow">Habilidades</p>
-                    <h2 id="skills-title">Stack técnico</h2>
+                    <h2 id="skills-title">Stack tecnológico</h2>
+                    <p class="section-intro">Las tecnologías con las que trabajo y las que quiero explorar. Debajo de cada una verás dónde la he usado.</p>
                 </div>
-                <div class="skills-grid">
-                    <div class="skill-group reveal">
-                        <h3>Lenguajes</h3>
-                        <ul class="tags tags-strong"><li>Java</li><li>C#</li><li>TypeScript</li><li>JavaScript</li><li>Python</li><li>SQL</li><li>HTML5</li><li>CSS3</li></ul>
+
+                <div class="tech-filters reveal" role="group" aria-label="Filtrar tecnologías">
+                    <button type="button" class="tech-filter is-active" data-filter="stack" aria-pressed="true"><span class="level-dot level-stack" aria-hidden="true"></span>Mi stack</button>
+                    <button type="button" class="tech-filter" data-filter="interest" aria-pressed="false"><span class="level-dot level-interest" aria-hidden="true"></span>Me interesan</button>
+                    <button type="button" class="tech-filter" data-filter="all" aria-pressed="false">Todos</button>
+                </div>
+
+                <div class="tech-board" data-active="stack">
+                    <div class="tech-group tech-group-wide reveal">
+                        <h3>Lenguajes y frameworks</h3>
+                        <ul class="tech-grid">
+                            <li class="tech" data-level="stack"><span class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/angular/angular-original.svg" alt="" loading="lazy"></span><span class="tech-name">Angular</span><span class="tech-use">Cojali · Gramola</span></li>
+                            <li class="tech" data-level="stack"><span class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/typescript/typescript-original.svg" alt="" loading="lazy"></span><span class="tech-name">TypeScript</span><span class="tech-use">Cojali · Gramola</span></li>
+                            <li class="tech" data-level="stack"><span class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/java/java-original.svg" alt="" loading="lazy"></span><span class="tech-name">Java</span><span class="tech-use">Cojali · Gramola · MDX</span></li>
+                            <li class="tech" data-level="stack"><span class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/spring/spring-original.svg" alt="" loading="lazy"></span><span class="tech-name">Spring Boot</span><span class="tech-use">Gramola</span></li>
+                            <li class="tech" data-level="stack"><span class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/csharp/csharp-original.svg" alt="" loading="lazy"></span><span class="tech-name">C#</span><span class="tech-use">Cojali · Pokémon</span></li>
+                            <li class="tech" data-level="stack"><span class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/dot-net/dot-net-original.svg" alt="" loading="lazy"></span><span class="tech-name">.NET</span><span class="tech-use">Pokémon</span></li>
+                            <li class="tech" data-level="stack"><span class="tech-logo tech-mono">WPF</span><span class="tech-name">WPF</span><span class="tech-use">Pokémon · Oddish</span></li>
+                            <li class="tech" data-level="stack"><span class="tech-logo tech-mono">SR</span><span class="tech-name">SignalR</span><span class="tech-use">Cojali</span></li>
+                            <li class="tech" data-level="stack"><span class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/javascript/javascript-original.svg" alt="" loading="lazy"></span><span class="tech-name">JavaScript</span><span class="tech-use">Proyectos web</span></li>
+                            <li class="tech" data-level="stack"><span class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/python/python-original.svg" alt="" loading="lazy"></span><span class="tech-name">Python</span><span class="tech-use">AgriTech</span></li>
+                            <li class="tech" data-level="stack"><span class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/html5/html5-original.svg" alt="" loading="lazy"></span><span class="tech-name">HTML5</span><span class="tech-use">AgriTech · Portfolio</span></li>
+                            <li class="tech" data-level="stack"><span class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/css3/css3-original.svg" alt="" loading="lazy"></span><span class="tech-name">CSS3</span><span class="tech-use">AgriTech · Portfolio</span></li>
+                            <li class="tech" data-level="interest"><span class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/nodejs/nodejs-original.svg" alt="" loading="lazy"></span><span class="tech-name">Node.js</span><span class="tech-use">Próximo objetivo</span></li>
+                            <li class="tech" data-level="interest"><span class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/react/react-original.svg" alt="" loading="lazy"></span><span class="tech-name">React</span><span class="tech-use">Próximo objetivo</span></li>
+                        </ul>
                     </div>
-                    <div class="skill-group reveal">
-                        <h3>Frameworks</h3>
-                        <ul class="tags tags-strong"><li>Angular</li><li>Spring Boot</li><li>.NET</li><li>WPF</li><li>SignalR</li></ul>
+
+                    <div class="tech-group reveal">
+                        <h3>Datos, cloud y herramientas</h3>
+                        <ul class="tech-grid">
+                            <li class="tech" data-level="stack"><span class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/mysql/mysql-original.svg" class="logo-darkfix" alt="" loading="lazy"></span><span class="tech-name">MySQL</span><span class="tech-use">Cojali · Gramola</span></li>
+                            <li class="tech" data-level="stack"><span class="tech-logo tech-mono mono-sql">SQL</span><span class="tech-name">SQL</span><span class="tech-use">Cojali · Gramola</span></li>
+                            <li class="tech" data-level="stack"><span class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/docker/docker-original.svg" alt="" loading="lazy"></span><span class="tech-name">Docker</span><span class="tech-use">AgriTech</span></li>
+                            <li class="tech" data-level="stack"><span class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/git/git-original.svg" alt="" loading="lazy"></span><span class="tech-name">Git</span><span class="tech-use">Todos mis proyectos</span></li>
+                            <li class="tech" data-level="stack"><span class="tech-logo"><span class="mask-icon" style="--icon:url(https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/github/github-original.svg)"></span></span><span class="tech-name">GitHub</span><span class="tech-use">Responsable repo MDX</span></li>
+                            <li class="tech" data-level="stack"><span class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/maven/maven-original.svg" alt="" loading="lazy"></span><span class="tech-name">Maven</span><span class="tech-use">MDX</span></li>
+                            <li class="tech" data-level="stack"><span class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/junit/junit-original.svg" alt="" loading="lazy"></span><span class="tech-name">JUnit 5</span><span class="tech-use">MDX</span></li>
+                            <li class="tech" data-level="interest"><span class="tech-logo"><span class="mask-icon mask-wide" style="--icon:url(https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg)"></span></span><span class="tech-name">AWS</span><span class="tech-use">Próximo objetivo</span></li>
+                            <li class="tech" data-level="interest"><span class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/azure/azure-original.svg" alt="" loading="lazy"></span><span class="tech-name">Azure</span><span class="tech-use">Próximo objetivo</span></li>
+                            <li class="tech" data-level="interest"><span class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/kubernetes/kubernetes-original.svg" alt="" loading="lazy"></span><span class="tech-name">Kubernetes</span><span class="tech-use">Próximo objetivo</span></li>
+                        </ul>
                     </div>
-                    <div class="skill-group reveal">
-                        <h3>Bases de datos</h3>
-                        <ul class="tags"><li>MySQL</li><li>SQL</li><li>BaseX</li><li>Modelado de datos</li></ul>
+
+                    <div class="tech-group reveal">
+                        <h3>Asistentes de IA</h3>
+                        <ul class="tech-grid">
+                            <li class="tech" data-level="stack"><span class="tech-logo"><span class="mask-icon" style="--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/openai.svg)"></span></span><span class="tech-name">ChatGPT</span><span class="tech-use">Asistente de desarrollo</span></li>
+                            <li class="tech" data-level="stack"><span class="tech-logo"><span class="mask-icon" style="--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/claude.svg);--icon-color:#d97757"></span></span><span class="tech-name">Claude</span><span class="tech-use">Asistente de desarrollo</span></li>
+                            <li class="tech" data-level="stack"><span class="tech-logo"><span class="mask-icon" style="--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/googlegemini.svg);--icon-color:#8e75b2"></span></span><span class="tech-name">Gemini</span><span class="tech-use">Asistente de desarrollo</span></li>
+                            <li class="tech" data-level="stack"><span class="tech-logo"><span class="mask-icon" style="--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/githubcopilot.svg)"></span></span><span class="tech-name">Copilot</span><span class="tech-use">Asistente en el IDE</span></li>
+                        </ul>
                     </div>
-                    <div class="skill-group reveal">
-                        <h3>APIs y seguridad</h3>
-                        <ul class="tags"><li>APIs REST</li><li>JWT</li><li>OAuth 2.0</li><li>Stripe API</li><li>Spotify Web API</li></ul>
-                    </div>
-                    <div class="skill-group reveal">
-                        <h3>Herramientas</h3>
-                        <ul class="tags"><li>Git</li><li>GitHub</li><li>Docker</li><li>Maven</li><li>JUnit 5</li><li>VS Code</li></ul>
-                    </div>
-                    <div class="skill-group reveal">
-                        <h3>Forma de trabajo</h3>
-                        <ul class="tags"><li>Trabajo en equipo</li><li>Control de versiones</li><li>Testing unitario</li><li>Comunicación</li></ul>
+
+                    <div class="tech-group tech-group-wide tech-group-center reveal">
+                        <h3>APIs, integraciones y seguridad</h3>
+                        <ul class="tech-grid">
+                            <li class="tech" data-level="stack"><span class="tech-logo tech-mono mono-api">{ }</span><span class="tech-name">APIs REST</span><span class="tech-use">Cojali · Gramola · AgriTech</span></li>
+                            <li class="tech" data-level="stack"><span class="tech-logo"><span class="mask-icon" style="--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/jsonwebtokens.svg);--icon-color:#d63aff"></span></span><span class="tech-name">JWT</span><span class="tech-use">Gramola</span></li>
+                            <li class="tech" data-level="stack"><span class="tech-logo tech-mono mono-oauth">OAuth</span><span class="tech-name">OAuth 2.0</span><span class="tech-use">Gramola</span></li>
+                            <li class="tech" data-level="stack"><span class="tech-logo"><span class="mask-icon" style="--icon:url(https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/stripe.svg);--icon-color:#635bff"></span></span><span class="tech-name">Stripe API</span><span class="tech-use">Pagos en Gramola</span></li>
+                        </ul>
                     </div>
                 </div>
             </div>

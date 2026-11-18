@@ -73,6 +73,23 @@
         revealElements.forEach((el) => revealObserver.observe(el));
     }
 
+    // Filtro del stack tecnológico
+    const techFilters = [...document.querySelectorAll('.tech-filter')];
+    const techItems = [...document.querySelectorAll('.tech')];
+    const applyFilter = (filter) => {
+        techItems.forEach((item) => {
+            const match = filter === 'all' || item.dataset.level === filter;
+            item.classList.toggle('is-dim', !match);
+        });
+        techFilters.forEach((button) => {
+            const active = button.dataset.filter === filter;
+            button.classList.toggle('is-active', active);
+            button.setAttribute('aria-pressed', String(active));
+        });
+    };
+    techFilters.forEach((button) => button.addEventListener('click', () => applyFilter(button.dataset.filter)));
+    if (techFilters.length) applyFilter('stack');
+
     // Copiar email
     document.querySelectorAll('[data-copy]').forEach((button) => {
         const label = button.querySelector('.copy-label');
