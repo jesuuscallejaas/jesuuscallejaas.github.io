@@ -1,11 +1,28 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
   <title id="title">Demo de Gramola Virtual</title>
-  <desc id="desc">Pantalla de terminal para la demo de Gramola Virtual</desc>
-  <rect width="1280" height="720" fill="#0d1117"/>
-  <rect x="80" y="90" width="1120" height="540" rx="12" fill="#161b22" stroke="#30363d" stroke-width="4"/>
-  <circle cx="120" cy="130" r="10" fill="#ff7b72"/><circle cx="155" cy="130" r="10" fill="#d29922"/><circle cx="190" cy="130" r="10" fill="#a855f7"/>
-  <text x="120" y="245" fill="#a855f7" font-family="monospace" font-size="42">$ gramola-virtual --demo</text>
-  <text x="120" y="325" fill="#e6edf3" font-family="monospace" font-size="54">Spotify music management</text>
-  <text x="120" y="405" fill="#8b949e" font-family="monospace" font-size="32">Angular · Spring Boot · MySQL · JWT</text>
-  <text x="120" y="535" fill="#a855f7" font-family="monospace" font-size="34">[ play demo ]</text>
+  <desc id="desc">Portada del vídeo de demostración de Gramola Virtual</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#16355e"/>
+      <stop offset="1" stop-color="#0b1d36"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.85" cy="0.1" r="0.6">
+      <stop offset="0" stop-color="#37c2d6" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#37c2d6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <rect width="1280" height="720" fill="url(#glow)"/>
+  <g fill="#37c2d6" opacity="0.5">
+    <rect x="860" y="300" width="18" height="120" rx="9"/><rect x="895" y="250" width="18" height="220" rx="9"/>
+    <rect x="930" y="200" width="18" height="320" rx="9"/><rect x="965" y="270" width="18" height="180" rx="9"/>
+    <rect x="1000" y="230" width="18" height="260" rx="9"/><rect x="1035" y="290" width="18" height="140" rx="9"/>
+    <rect x="1070" y="320" width="18" height="80" rx="9"/>
+  </g>
+  <text x="110" y="250" fill="#37c2d6" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="600" letter-spacing="4">DEMO · PROYECTO</text>
+  <text x="110" y="340" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="84" font-weight="800">Gramola Virtual</text>
+  <text x="110" y="410" fill="#c9d6e8" font-family="Inter, Arial, sans-serif" font-size="32">Angular · Spring Boot · MySQL · Stripe</text>
+  <circle cx="170" cy="530" r="52" fill="#37c2d6"/>
+  <path d="M155 505 L195 530 L155 555 Z" fill="#0b1d36"/>
+  <text x="250" y="542" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="600">Ver demo</text>
 </svg>
