@@ -255,7 +255,7 @@ ul, ol { list-style: none; }
 .floating-card-bottom { bottom: 32px; right: -40px; }
 
 .highlights {
-    display: grid; grid-template-columns: repeat(4, 1fr);
+    display: grid; grid-template-columns: repeat(3, 1fr);
     margin-top: 64px;
     background: var(--surface); border: 1px solid var(--border);
     border-radius: var(--radius); box-shadow: var(--shadow-sm);
@@ -565,9 +565,6 @@ ul, ol { list-style: none; }
     .hero { padding-top: 48px; }
     .hero-grid { grid-template-columns: 1fr; gap: 48px; }
     .hero-visual { width: min(100%, 340px); }
-    .highlights { grid-template-columns: repeat(2, 1fr); }
-    .highlights > div:nth-child(3) { border-left: 0; }
-    .highlights > div:nth-child(n+3) { border-top: 1px solid var(--border); }
 
     .project-featured { grid-template-columns: 1fr; }
     .tfg-card { grid-template-columns: 1fr; gap: 28px; padding: 40px 32px; }
@@ -611,3 +608,5 @@ ul, ol { list-style: none; }
     .tech-board > .tech-group:nth-child(3) .tech-grid,
     .tech-group-center .tech-grid { grid-template-columns: repeat(2, 1fr); }
 }
+
+.nowrap { white-space: nowrap; }
